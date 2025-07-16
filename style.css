@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Navigation */
+nav {
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.1);
+}
+
+nav a {
+  color:#00aabb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+  text-shadow: 0 0 5px #ff4d4d;
+}
+
+/* Global link color (outside nav) */
+a {
+  color: red;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #ff4d4d;
+  text-shadow: 0 0 5px #ff4d4d;
+}
+
+/* Section Container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 20px 40px rgba(255, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #00bcd4;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: #121212;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px #00bcd4;
+  transform: translateY(-3px);
+}
+
+/* Skills Section */
+.skills-list {
+  margin-top: 15px;
+}
+
+.skill-badge {
+  background: #00bcd4;
+  color: #121212;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #f0f0f0;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: #2a2a2a;
+  box-shadow: 0 0 5px #00bcd4;
+}
+
+.contact-form button {
+  background: #00bcd4;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #00aabb;
+  box-shadow: 0 0 10px #00bcd4;
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  font-size: 24px;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.5);
+  z-index: 999;
+  display: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+  background-color: #6ca3de;
+  transform: scale(1.1);
+}
